@@ -12,7 +12,7 @@ fi
 DOCKER_NAME=$3
 TAG_NAME=`date +%s`
 
-set -e
+set -e -x
 
 TMP="/tmp/docker-template/"
 rm -rf $TMP
