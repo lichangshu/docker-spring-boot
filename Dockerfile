@@ -14,6 +14,6 @@ ADD $JAR /opt/app/app.jar
 EXPOSE 8080
 WORKDIR /opt/app/
 
-CMD [ "/usr/bin/java", "-Djava.security.egd=file:/dev/urandom", "-jar", "/opt/app/app.jar" ]
+CMD [ "/usr/local/openjdk-8/bin/java", "-Djava.security.egd=file:/dev/urandom", "-jar", "/opt/app/app.jar" ]
 
 
